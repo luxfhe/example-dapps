@@ -3,7 +3,7 @@ import type { Signers } from "../../types";
 import { HardhatFhevmRuntimeEnvironment } from "@fhevm/hardhat-plugin";
 import { utils as fhevm_utils } from "@fhevm/mock-utils";
 import { HardhatEthersSigner } from "@nomicfoundation/hardhat-ethers/signers";
-import { DecryptedResults } from "@zama-fhe/relayer-sdk";
+import { DecryptedResults } from "@luxfhe-fhe/relayer-sdk";
 import { expect } from "chai";
 import { ethers } from "hardhat";
 import * as hre from "hardhat";

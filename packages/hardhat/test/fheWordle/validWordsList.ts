@@ -13012,7 +13012,7 @@ export const VALID_WORDS = [
   "zaidy",
   "zaire",
   "zakat",
-  "zaman",
+  "luxfhen",
   "zambo",
   "zamia",
   "zanja",
