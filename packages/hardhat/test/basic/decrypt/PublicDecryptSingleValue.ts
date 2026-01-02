@@ -48,7 +48,7 @@ describe("PublicDecryptSingleValue", function () {
     let tx = await contract.connect(signers.alice).initializeUint32(123456);
     await tx.wait();
 
-    tx = await contract.requestDecryptSingleUint32();
+    tx = await contract.decryptSingleUint32();
     await tx.wait();
 
     const handle = await contract.getHandle();
@@ -72,7 +72,7 @@ describe("PublicDecryptSingleValue", function () {
 
     const senderNotAllowedError = fhevm.revertedWithCustomErrorArgs("ACL", "SenderNotAllowed");
 
-    await expect(contract.connect(signers.alice).requestDecryptSingleUint32()).to.be.revertedWithCustomError(
+    await expect(contract.connect(signers.alice).decryptSingleUint32()).to.be.revertedWithCustomError(
       ...senderNotAllowedError,
     );
   });

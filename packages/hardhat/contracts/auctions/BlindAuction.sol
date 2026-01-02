@@ -148,7 +148,7 @@ contract BlindAuction is ZamaEthereumConfig, ReentrancyGuard {
         FHE.allowThis(winningAddress);
     }
 
-    function requestDecryptWinningAddress() public onlyAfterEnd {
+    function decryptWinningAddress() public onlyAfterEnd {
         FHE.makePubliclyDecryptable(winningAddress);
     }
 

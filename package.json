@@ -74,6 +74,10 @@
       "unrs-resolver",
       "utf-8-validate",
       "yarn"
-    ]
+    ],
+    "overrides": {
+      "@luxfhe-fhe/relayer-sdk": "npm:@zama-fhe/relayer-sdk@^0.3.0-8",
+      "@luxfhe-fhe/oracle-solidity": "npm:@zama-fhe/oracle-solidity@^0.2.0"
+    }
   }
 }

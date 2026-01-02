@@ -138,7 +138,7 @@ describe("BlindAuction", function () {
 
     await time.increase(3600);
 
-    let tx = await this.blindAuction.requestDecryptWinningAddress();
+    let tx = await this.blindAuction.decryptWinningAddress();
     await tx.wait();
     await this.resolveAuction();
 
