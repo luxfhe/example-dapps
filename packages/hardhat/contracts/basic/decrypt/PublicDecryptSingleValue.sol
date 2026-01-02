@@ -19,7 +19,7 @@ contract PublicDecryptSingleValue is ZamaEthereumConfig {
         _encryptedUint32 = FHE.add(FHE.asEuint32(value), FHE.asEuint32(1));
     }
 
-    function requestDecryptSingleUint32() external {
+    function decryptSingleUint32() external {
         FHE.makePubliclyDecryptable(_encryptedUint32);
     }
 

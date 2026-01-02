@@ -49,7 +49,7 @@ describe("PublicDecryptMultipleValues", function () {
     let tx = await contract.connect(signers.alice).initialize(true, 123456, 78901234567);
     await tx.wait();
 
-    tx = await contract.requestDecryptMultipleValues();
+    tx = await contract.decryptMultipleValues();
     await tx.wait();
 
     // Spread to create a mutable copy (ethers returns read-only arrays)

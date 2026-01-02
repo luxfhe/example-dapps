@@ -25,7 +25,7 @@ contract PublicDecryptMultipleValues is ZamaEthereumConfig {
         FHE.allowThis(_encryptedUint64);
     }
 
-    function requestDecryptMultipleValues() external {
+    function decryptMultipleValues() external {
         FHE.makePubliclyDecryptable(_encryptedBool);
         FHE.makePubliclyDecryptable(_encryptedUint32);
         FHE.makePubliclyDecryptable(_encryptedUint64);
