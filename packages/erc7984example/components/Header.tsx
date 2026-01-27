@@ -25,7 +25,7 @@ export const Header = () => {
             <div className="relative bg-[#E8E8E8] border border-[#2D2D2D] p-2">
               <Image
                 src="/favicon.png"
-                alt="Zama Logo"
+                alt="Lux FHE Logo"
                 width={32}
                 height={32}
                 className="w-8 h-8"
