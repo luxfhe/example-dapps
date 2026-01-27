@@ -34,7 +34,7 @@ export const Header = () => {
           </div>
           {/* Optional: Brand text */}
           <span className="text-lg font-bold text-[#A38025] hidden sm:block">
-            Zama
+            Lux FHE
           </span>
         </Link>
       </div>
