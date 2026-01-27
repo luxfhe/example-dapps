@@ -10,12 +10,12 @@ import {
     euint32,
     eaddress
 } from "@fhevm/solidity/lib/FHE.sol";
-import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
+import {LuxEthereumConfig} from "@fhevm/solidity/config/LuxConfig.sol";
 
 /**
  * This trivial example demonstrates the FHE encryption mechanism.
  */
-contract EncryptMultipleValues is ZamaEthereumConfig {
+contract EncryptMultipleValues is LuxEthereumConfig {
     ebool private _encryptedEbool;
     euint32 private _encryptedEuint32;
     eaddress private _encryptedEaddress;

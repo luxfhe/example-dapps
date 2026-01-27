@@ -4,7 +4,7 @@ pragma solidity ^0.8.24;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 import {FHE, externalEuint64, euint64, eaddress, ebool} from "@fhevm/solidity/lib/FHE.sol";
-import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
+import {LuxEthereumConfig} from "@fhevm/solidity/config/LuxConfig.sol";
 import {Ownable2Step, Ownable} from "@openzeppelin/contracts/access/Ownable2Step.sol";
 import {IERC20Errors} from "@openzeppelin/contracts/interfaces/draft-IERC6093.sol";
 import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
@@ -14,7 +14,7 @@ import {ERC7984} from "openzeppelin-confidential-contracts/contracts/token/ERC79
 /// @title Dutch Auction for Selling Confidential ERC20 Tokens
 /// @notice Implements a Dutch auction mechanism for selling confidential ERC20 tokens
 /// @dev Uses FHEVM for handling encrypted values and transactions
-contract ConfidentialDutchAuction is ZamaEthereumConfig, ReentrancyGuard, Ownable2Step {
+contract ConfidentialDutchAuction is LuxEthereumConfig, ReentrancyGuard, Ownable2Step {
     /// @notice The ERC20 token being auctioned
     ERC7984 public immutable auctionToken;
     /// @notice The token used for payments

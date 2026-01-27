@@ -2,9 +2,9 @@
 pragma solidity ^0.8.24;
 
 import {FHE, ebool, euint32, euint64} from "@fhevm/solidity/lib/FHE.sol";
-import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
+import {LuxEthereumConfig} from "@fhevm/solidity/config/LuxConfig.sol";
 
-contract UserDecryptMultipleValues is ZamaEthereumConfig {
+contract UserDecryptMultipleValues is LuxEthereumConfig {
     ebool private _encryptedBool; // = 0 (uninitizalized)
     euint32 private _encryptedUint32; // = 0 (uninitizalized)
     euint64 private _encryptedUint64; // = 0 (uninitizalized)

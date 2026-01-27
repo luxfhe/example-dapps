@@ -2,9 +2,9 @@
 pragma solidity ^0.8.24;
 
 import {FHE, euint8, externalEuint8} from "@fhevm/solidity/lib/FHE.sol";
-import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
+import {LuxEthereumConfig} from "@fhevm/solidity/config/LuxConfig.sol";
 
-contract FHEAdd is ZamaEthereumConfig {
+contract FHEAdd is LuxEthereumConfig {
     euint8 private _a;
     euint8 private _b;
     // solhint-disable-next-line var-name-mixedcase
