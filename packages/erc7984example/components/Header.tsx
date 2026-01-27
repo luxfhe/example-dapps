@@ -32,7 +32,7 @@ export const Header = () => {
               />
             </div>
           </div>
-          {/* Optional: Zama text */}
+          {/* Optional: Brand text */}
           <span className="text-lg font-bold text-[#A38025] hidden sm:block">
             Zama
           </span>
