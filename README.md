@@ -1,6 +1,6 @@
-# fhEVM dApp Examples
+# TorusEVM dApp Examples
 
-This repository contains example dApps built using fhEVM (Fully Homomorphic EVM). Each example demonstrates different aspects of building privacy-preserving smart contracts using FHE operations.
+This repository contains example dApps built using TorusEVM (Fully Homomorphic EVM). Each example demonstrates different aspects of building privacy-preserving smart contracts using FHE operations.
 
 ## Project Structure
 
@@ -47,7 +47,7 @@ Each example includes detailed documentation in its respective README explaining
 
 ### ERC7984 Token Example Frontend
 
-The `./packages/erc7984example` directory contains a simple React-based frontend that demonstrates interacting with an ERC7984 confidential token smart contract using the fhEVM SDK.
+The `./packages/erc7984example` directory contains a simple React-based frontend that demonstrates interacting with an ERC7984 confidential token smart contract using the TorusEVM SDK.
 
 **Features:**
 - Uses OpenZeppelin's confidential smart contract library.
@@ -151,7 +151,7 @@ For more details, see the [MetaMask development guide](https://docs.metamask.io/
 
 ## Contributing
 
-This repository serves as a comprehensive example of building privacy-preserving dApps with fhEVM. Feel free to explore the examples, run the tests, and use them as a foundation for your own projects.
+This repository serves as a comprehensive example of building privacy-preserving dApps with TorusEVM. Feel free to explore the examples, run the tests, and use them as a foundation for your own projects.
 
 ## 📄 License
 

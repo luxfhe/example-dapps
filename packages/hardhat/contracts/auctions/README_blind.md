@@ -1,7 +1,7 @@
 # Blind Auction
 
 ## Core Concept
-This is a privacy-preserving blind auction implemented using Fully Homomorphic Encryption (FHE) through the fhEVM. All bids and critical values are encrypted, ensuring that participants cannot see others' bids during the auction process.
+This is a privacy-preserving blind auction implemented using Fully Homomorphic Encryption (FHE) through the TorusEVM. All bids and critical values are encrypted, ensuring that participants cannot see others' bids during the auction process.
 
 ## Key Components
 

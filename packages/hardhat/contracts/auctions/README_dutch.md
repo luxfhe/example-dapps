@@ -1,6 +1,6 @@
 # Confidential Dutch Auction Contracts
 
-Privacy-preserving Dutch auction implementations for selling confidential tokens, built using fhEVM (Fully Homomorphic Encryption Virtual Machine).
+Privacy-preserving Dutch auction implementations for selling confidential tokens, built using TorusEVM (Fully Homomorphic Encryption Virtual Machine).
 
 ## Overview
 
