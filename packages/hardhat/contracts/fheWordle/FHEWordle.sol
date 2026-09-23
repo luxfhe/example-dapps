@@ -6,9 +6,9 @@ import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import {Ownable2Step, Ownable} from "@openzeppelin/contracts/access/Ownable2Step.sol";
 import {FHE, ebool, euint8, euint32, externalEuint8} from "@fhevm/solidity/lib/FHE.sol";
-import {LuxEthereumConfig} from "@fhevm/solidity/config/LuxConfig.sol";
+import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
-contract FHEWordle is LuxEthereumConfig, Ownable2Step, Initializable {
+contract FHEWordle is ZamaEthereumConfig, Ownable2Step, Initializable {
     bytes32 public constant root = 0x918fd5f641d6c8bb0c5e07a42f975969c2575250dc3fb743346d1a3c11728bdd;
     bytes32 public constant rootAllowed = 0xd3e7a12d252dcf5de57a406f0bd646217ec1f340bad869182e5b2bfadd086993;
     uint16 public constant wordSetSz = 5757;

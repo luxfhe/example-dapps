@@ -2,9 +2,9 @@
 pragma solidity ^0.8.24;
 
 import {FHE, ebool, euint8, externalEuint8} from "@fhevm/solidity/lib/FHE.sol";
-import {LuxEthereumConfig} from "@fhevm/solidity/config/LuxConfig.sol";
+import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
-contract FHEIfThenElse is LuxEthereumConfig {
+contract FHEIfThenElse is ZamaEthereumConfig {
     euint8 private _a;
     euint8 private _b;
     euint8 private _max;

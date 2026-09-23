@@ -5,11 +5,11 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import {IERC7984} from "openzeppelin-confidential-contracts/contracts/interfaces/IERC7984.sol";
 import {FHE, euint16, euint32, euint64, euint128, ebool, externalEuint64} from "@fhevm/solidity/lib/FHE.sol";
-import {LuxEthereumConfig} from "@fhevm/solidity/config/LuxConfig.sol";
+import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
 /// @title Airdrop
 /// @notice Airdrop contract for confidential tokens
-contract Airdrop is LuxEthereumConfig, Ownable, ReentrancyGuard {
+contract Airdrop is ZamaEthereumConfig, Ownable, ReentrancyGuard {
     // mapping(user => token => claimed)
     mapping(address => mapping(address => bool)) public alreadyClaimed;
 

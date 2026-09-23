@@ -2,7 +2,7 @@
 pragma solidity ^0.8.24;
 
 import {FHE, externalEuint64, euint64, eaddress, ebool} from "@fhevm/solidity/lib/FHE.sol";
-import {LuxEthereumConfig} from "@fhevm/solidity/config/LuxConfig.sol";
+import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 import {Ownable2Step, Ownable} from "@openzeppelin/contracts/access/Ownable2Step.sol";
 import {IERC20Errors} from "@openzeppelin/contracts/interfaces/draft-IERC6093.sol";
 import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
@@ -10,7 +10,7 @@ import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol
 
 import {ERC7984} from "openzeppelin-confidential-contracts/contracts/token/ERC7984/ERC7984.sol";
 
-contract BlindAuction is LuxEthereumConfig, ReentrancyGuard {
+contract BlindAuction is ZamaEthereumConfig, ReentrancyGuard {
     /// @notice The recipient of the highest bid once the auction ends
     address public beneficiary;
 
